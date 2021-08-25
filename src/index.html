@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Music App</title>
+  </head>
+  <body data-theme="light">
+    
+    <div class="container">
+
+      <div class="music-player">
+        <header class="music-player__header">
+          <button class="btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <h3 class="music-player__now">Now Playing</h3>
+
+          <button class="btn" id="change-theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </header>
+
+        <div class="music-player__music">
+          <div class="music__image-wrapper">
+            <img src="images/piano.jpg" alt="Current Music" id="music-image" class="music__image">
+          </div>
+
+          <h3 class="music__name" id="music-name">Fur Elise</h3>
+          <h4 class="music__artist" id="music-artist">Beethoven</h4>
+        </div><!-- music -->
+
+        <div class="music-player__time-control">
+          <span class="time-control__current-time" id="current-time">00:00</span>
+
+          <div class="time-control__time">
+            <input type="range" name="time-music" id="progress-time-music" value="0" class="time__range">
+          </div>
+
+          <span class="time-control__total-time" id="total-time">03:25</span>
+        </div><!-- time control -->
+
+        <div class="music-player__music-control">
+          <button class="btn btn--circle" id="random">
+            <i class="fas fa-random"></i>
+          </button>
+
+          <button class="btn btn--circle" id="backward">
+            <i class="fas fa-step-backward"></i>
+          </button>
+
+          <button class="btn btn--inset btn--circle btn--circle-lg" id="reproduction-state">
+            <i class="fas fa-play"></i>
+          </button>
+
+          <button class="btn btn--circle" id="forward">
+            <i class="fas fa-step-forward"></i>
+          </button>
+
+          <button class="btn btn--circle" id="loop">
+            <i class="fas fa-sync"></i>
+          </button>
+        </div><!-- music control -->
+        
+        <div class="music-player__phone-bar"></div>
+      </div><!-- music player -->
+
+    </div><!-- container -->
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
