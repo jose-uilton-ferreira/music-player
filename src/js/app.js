@@ -2,20 +2,20 @@ const musics = [
   {
     name: 'Fur Elise',
     artist: 'Beethoven',
-    imageURL: 'images/piano.jpg',
-    musicURL: 'musics/fur-elise.mp3'
+    imageURL: './src/images/piano.jpg',
+    musicURL: './src/musics/fur-elise.mp3'
   },
   {
     name: 'Rondo Alla Turca',
     artist: 'Mozart',
-    imageURL: 'images/piano2.jpg',
-    musicURL: 'musics/rondo-alla-turca.mp3'
+    imageURL: './src/images/piano2.jpg',
+    musicURL: './src/musics/rondo-alla-turca.mp3'
   },
   {
     name: 'Moonlight',
     artist: 'Beethoven',
-    imageURL: 'images/moonlight.jpg',
-    musicURL: 'musics/moonlight.mp3'
+    imageURL: './src/images/moonlight.jpg',
+    musicURL: './src/musics/moonlight.mp3'
   }
 ];
 
